@@ -1,3 +1,5 @@
+import {Component, Input} from '@angular/core';
+
 @Component({
   selector: 'counter',
   template: `
@@ -7,13 +9,13 @@
   `,
 })
 export class CounterComponent {
-  @Input() counter = 0
+  @Input() counter = 0;
 
   increment() {
-    this.counter += 1
+    this.counter += 1;
   }
 
   decrement() {
-    this.counter -= 1
+    this.counter -= 1;
   }
 }
