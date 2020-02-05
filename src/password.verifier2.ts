@@ -1,4 +1,3 @@
-import * as moment from 'moment';
 import {logger} from './infra/logger.helper';
 
 export class PasswordVerifier2 {
