@@ -4,13 +4,6 @@ import {logger} from './infra/logger.helper';
 export class PasswordVerifier2 {
 
   public verify(text:string):boolean {
-    const dayOfWeek = moment().day();
-    if (dayOfWeek === 0 || dayOfWeek === 6) {
-      logger.info('weekend error was raised');
-      throw Error('Error: Password Verification is Disabled on Weekends');
-    }
-
-    //length
     if (text.length < 8) {
       logger.info('failed for length');
       return false;
